@@ -1,5 +1,7 @@
 class Solution:
     def countDigit(self, n: int) -> int:
+        if n < 0:
+            return -1
         count = 0
         while(n > 0):
             n = n//10
@@ -8,4 +10,4 @@ class Solution:
         
 if __name__ == "__main__":    
     ob = Solution()
-    print(ob.countDigit(85))
+    print(ob.countDigit(9243))
