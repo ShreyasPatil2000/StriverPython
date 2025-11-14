@@ -17,11 +17,19 @@ class Solution:
         nums.extend(nums1[i:])
         nums.extend(nums2[j:])
         return nums
+    
+    def intersectionArray(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        nums = []
+        for n in nums1:
+            if n in nums2:
+                nums.append(n)
+        return nums
         
 if __name__ == "__main__":    
     ob = Solution()
-    nums1 = [3, 4, 6, 7, 9, 9]
-    nums2 = [1, 5, 7, 8, 8]
+    nums1 = [3, 4, 6, 7, 7, 9, 9]
+    nums2 = [1, 5, 7, 7, 8, 8]
     print(ob.unionArray(nums1, nums2))
+    print(ob.intersectionArray(nums1, nums2))
     
-# Time Complexity: O(N), Space Complexity: O(1)
+# Time Complexity: O(N), Space Complexity: O(N)
