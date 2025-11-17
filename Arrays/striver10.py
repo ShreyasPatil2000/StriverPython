@@ -19,4 +19,4 @@ if __name__ == "__main__":
     ob = Solution()
     print(ob.longestSubarray([1, 2, 3, 1, 1, 1, 1, 4, 2, 3], 3))
     
-# Time Complexity: O(N), Space Complexity: O(1)
+# Time Complexity: O(N), Space Complexity: O(1) This code is only valid for positive and zeroes in their array.
